@@ -1,8 +1,8 @@
 <form action="{{ route('posts.store') }}" method="POST">
     @csrf
-    <div class="p-6 text-gray-900 dark:text-gray-100 flex gap-2">
+    <div class="p-6 text-gray-900 dark:text-gray-100 flex gap-2 items-center ">
         <div>
-            <x-text-input id="content" type="text" autofocus name="content" value="{{ old('content') }}" required placeholder="{{ __('Content') }}" />
+            <x-text-input class="w-96" id="content" type="text" autofocus name="content" value="{{ old('content') }}" required placeholder="{{ __('Content') }}" />
         </div>
         <div>
             <x-primary-button class="ms-4">
